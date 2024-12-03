@@ -1,0 +1,71 @@
+<mvc:View controllerName="crudoperations.controller.CRUD"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <subHeader>
+            <Bar>
+                <contentRight>
+                    <Button text="Create" press="createBtn"></Button>
+                    
+                </contentRight>
+            </Bar>
+        </subHeader>
+
+        <Table items="{/Employee}" id="empTable">
+            <columns>
+                <Column >
+                    <Text text="ID"></Text>
+                </Column>
+                <Column >
+                    <Text text="NAME"></Text>
+                </Column>
+                <Column >
+                    <Text text="BLOOD GROUP"></Text>
+                </Column>
+                <Column >
+                    <Text text="DESIGNATION"></Text>
+                </Column>
+                <Column >
+                    <Text text="EMAIL"></Text>
+                </Column>
+                <Column >
+                    <Text text="CONTACT"></Text>
+                </Column>
+                <Column >
+                    <Text text="ADDRESS"></Text>
+                </Column>
+                <Column >
+                    <Text text="BRANCH"></Text>
+                </Column>
+                <Column >
+                    <Label ></Label>
+                </Column>
+                <Column >
+                    <Label ></Label>
+                </Column>
+
+            </columns>
+            <items>
+            <ColumnListItem >
+                <cells>
+                    <Text text="{eid}"></Text>
+                    <Text text="{ename}"></Text>
+                    <Text text="{ebloodgroup}"></Text>
+                    <Text text="{edesignation}"></Text>
+                    <Text text="{eemail}"></Text>
+                    <Text text="{econtact}"></Text>
+                    <Text text="{eaddress}"></Text>
+                    <Text text="{ebranch}"></Text>
+                    <Button text="Update" press="updateBtn" type="Emphasized"></Button>
+                    <Button text="Delete" press="deleteBtn" type="Negative"></Button>
+                </cells>
+            </ColumnListItem>
+            </items>
+        </Table>
+        <footer>
+            <Bar >
+                
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

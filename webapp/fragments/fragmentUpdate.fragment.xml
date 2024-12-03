@@ -1,0 +1,34 @@
+<core:FragmentDefinition xmlns:form="sap.ui.layout.form" xmlns:layout="sap.ui.layout" xmlns:core= "sap.ui.core"
+xmlns= "sap.m"
+>
+<Dialog id="updateDialog">
+        <content>
+            <form:SimpleForm >
+                <form:content>
+                    <Label text="ID"></Label>
+                    <Input editable="false" id="updateId"></Input>
+                    <Label text="NAME"></Label>
+                    <Input editable="true" id="updateName"></Input>
+                    <Label text="BLOOD GROUP"></Label>
+                    <Input editable="true" id="updateBloodgrp" ></Input>
+                    <Label text="DESIGNATION"></Label>
+                    <Input editable="true" id="updateDes"></Input>
+                    <Label text="EMAIL"></Label>
+                    <Input editable="true" id="updateEmail"></Input>
+                    <Label text="CONTACT"></Label>
+                    <Input editable="true" id="updateContact"></Input>
+                    <Label text="ADDRESS"></Label>
+                    <Input editable="true" id="updateAddress"></Input>
+                    <Label text="BRANCH"></Label>
+                    <Input editable="true" id="updateBranch"></Input>
+                </form:content>
+            </form:SimpleForm>
+        </content>
+        <beginButton>
+            <Button text="Save" press="onSave"></Button>
+        </beginButton>
+        <endButton>
+            <Button text="Cancel" press="onCancel1"></Button>
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>
